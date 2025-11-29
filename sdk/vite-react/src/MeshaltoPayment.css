@@ -1,0 +1,293 @@
+/* Meshalto Payment Component - Theme-based Styling */
+
+.meshalto-payment {
+	font-family: var(
+		--font-family,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		'Roboto',
+		sans-serif
+	);
+	color: var(--color-text, #111827);
+	background-color: var(--color-background, #ffffff);
+	padding: var(--spacing-md, 1rem);
+}
+
+.meshalto-payment *,
+.meshalto-payment *::before,
+.meshalto-payment *::after {
+	box-sizing: border-box;
+}
+
+.meshalto-payment-container {
+	background-color: var(--color-surface, #ffffff);
+	border-radius: var(--radius-xl, 1rem);
+	box-shadow: var(--shadow-card, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+	padding: var(--spacing-xl, 2rem);
+	max-width: 100%;
+	width: 100%;
+}
+
+.meshalto-payment-header {
+	margin-bottom: var(--spacing-xl, 2rem);
+	text-align: center;
+}
+
+.meshalto-payment-header h3 {
+	font-size: var(--font-size-h3, 1.25rem);
+	font-weight: var(--font-weight-bold, 700);
+	color: var(--color-text, #111827);
+	margin: 0 0 var(--spacing-md, 1rem);
+}
+
+.meshalto-payment-header .amount {
+	font-size: var(--font-size-h1, 2rem);
+	font-weight: var(--font-weight-bold, 700);
+	background: linear-gradient(
+		135deg,
+		var(--color-primary, #6366f1) 0%,
+		var(--color-secondary, #8b5cf6) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.meshalto-payment-error {
+	background-color: rgba(239, 68, 68, 0.1);
+	border: 1px solid var(--color-error, #ef4444);
+	color: var(--color-error, #ef4444);
+	padding: var(--spacing-md, 1rem);
+	border-radius: var(--radius-md, 0.5rem);
+	margin-bottom: var(--spacing-lg, 1.5rem);
+	font-size: var(--font-size-small, 0.875rem);
+}
+
+.meshalto-payment-form {
+	margin-bottom: var(--spacing-lg, 1.5rem);
+}
+
+.meshalto-form-group {
+	margin-bottom: var(--spacing-lg, 1.5rem);
+}
+
+.meshalto-form-group label {
+	display: block;
+	font-size: var(--font-size-small, 0.875rem);
+	font-weight: var(--font-weight-semibold, 600);
+	color: var(--color-text-secondary, #6b7280);
+	margin-bottom: var(--spacing-sm, 0.5rem);
+}
+
+.meshalto-form-input,
+.meshalto-form-select {
+	width: 100%;
+	height: var(--spacing-2xl, 3rem);
+	padding: 0 var(--spacing-md, 1rem);
+	font-size: var(--font-size-base, 1rem);
+	font-family: inherit;
+	color: var(--color-text, #111827);
+	background-color: var(--color-surface, #ffffff);
+	border: 2px solid var(--color-border, #e5e7eb);
+	border-radius: var(--radius-md, 0.5rem);
+	transition: var(--transition, all 0.2s ease-in-out);
+	outline: none;
+}
+
+.meshalto-form-input:hover,
+.meshalto-form-select:hover {
+	border-color: var(--color-border-focus, #6366f1);
+}
+
+.meshalto-form-input:focus,
+.meshalto-form-select:focus {
+	border-color: var(--color-border-focus, #6366f1);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.meshalto-form-input:disabled,
+.meshalto-form-select:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+	background-color: var(--color-surface-hover, #f3f4f6);
+}
+
+.meshalto-form-input::placeholder {
+	color: var(--color-text-muted, #9ca3af);
+}
+
+.meshalto-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-md, 1rem);
+}
+
+@media (max-width: 480px) {
+	.meshalto-form-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+.meshalto-form-actions {
+	display: flex;
+	gap: var(--spacing-md, 1rem);
+	margin-top: var(--spacing-xl, 2rem);
+}
+
+.meshalto-btn {
+	flex: 1;
+	height: var(--spacing-2xl, 3rem);
+	padding: 0 var(--spacing-xl, 2rem);
+	font-size: var(--font-size-base, 1rem);
+	font-weight: var(--font-weight-semibold, 600);
+	font-family: inherit;
+	border: none;
+	border-radius: var(--radius-lg, 0.75rem);
+	cursor: pointer;
+	transition: var(--transition, all 0.2s ease-in-out);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--spacing-sm, 0.5rem);
+}
+
+.meshalto-btn:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.meshalto-btn-primary {
+	background: linear-gradient(
+		135deg,
+		var(--color-primary, #6366f1) 0%,
+		var(--color-secondary, #8b5cf6) 100%
+	);
+	color: white;
+	box-shadow: var(--shadow-button, 0 1px 3px 0 rgba(0, 0, 0, 0.1));
+}
+
+.meshalto-btn-primary:hover:not(:disabled) {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-card, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+}
+
+.meshalto-btn-primary:active:not(:disabled) {
+	transform: translateY(0);
+}
+
+.meshalto-btn-secondary {
+	background-color: var(--color-surface, #ffffff);
+	color: var(--color-text-secondary, #6b7280);
+	border: 2px solid var(--color-border, #e5e7eb);
+}
+
+.meshalto-btn-secondary:hover:not(:disabled) {
+	background-color: var(--color-surface-hover, #f3f4f6);
+	border-color: var(--color-text-muted, #9ca3af);
+}
+
+.meshalto-spinner {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-top-color: white;
+	border-radius: 50%;
+	animation: meshalto-spin 0.6s linear infinite;
+}
+
+@keyframes meshalto-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.meshalto-payment-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: var(--spacing-xl, 2rem);
+	padding-top: var(--spacing-lg, 1.5rem);
+	border-top: 1px solid var(--color-border, #e5e7eb);
+	font-size: var(--font-size-small, 0.875rem);
+}
+
+.meshalto-secure-badge {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-xs, 0.25rem);
+	color: var(--color-text-secondary, #6b7280);
+}
+
+.meshalto-secure-badge svg {
+	color: var(--color-success, #10b981);
+}
+
+.meshalto-powered-by {
+	color: var(--color-text-muted, #9ca3af);
+	text-align: center;
+}
+
+.meshalto-powered-by strong {
+	color: var(--color-primary, #6366f1);
+	font-weight: var(--font-weight-semibold, 600);
+}
+
+/* Form Size Variants */
+.meshalto-payment-container--small {
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+.meshalto-payment-container--large {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: var(--spacing-2xl, 3rem);
+}
+
+.meshalto-payment-container--large .meshalto-payment-header h3 {
+	font-size: var(--font-size-h2, 1.5rem);
+}
+
+.meshalto-payment-container--large .meshalto-payment-header .amount {
+	font-size: 2.5rem;
+}
+
+.meshalto-payment-container--large .meshalto-form-input,
+.meshalto-payment-container--large .meshalto-form-select {
+	height: 3.5rem;
+	font-size: var(--font-size-large, 1.125rem);
+	padding: 0 var(--spacing-lg, 1.5rem);
+}
+
+.meshalto-payment-container--large .meshalto-btn {
+	height: 3.5rem;
+	font-size: var(--font-size-large, 1.125rem);
+	padding: 0 var(--spacing-2xl, 3rem);
+}
+
+.meshalto-payment-container--large .meshalto-form-group label {
+	font-size: var(--font-size-base, 1rem);
+}
+
+@media (max-width: 640px) {
+	.meshalto-payment-container {
+		padding: var(--spacing-lg, 1.5rem);
+	}
+	.meshalto-payment-header .amount {
+		font-size: var(--font-size-h2, 1.5rem);
+	}
+	.meshalto-form-actions {
+		flex-direction: column;
+	}
+	.meshalto-payment-footer {
+		flex-direction: column;
+		gap: var(--spacing-sm, 0.5rem);
+		text-align: center;
+	}
+
+	.meshalto-payment-container--large {
+		padding: var(--spacing-lg, 1.5rem);
+	}
+}

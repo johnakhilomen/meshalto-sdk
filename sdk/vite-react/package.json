@@ -1,0 +1,100 @@
+{
+	"name": "@meshalto/react",
+	"version": "0.1.0",
+	"description": "React payment SDK for Stripe, Square, and PayPal with automatic cost optimization",
+	"private": false,
+	"type": "module",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./styles.css": "./dist/style.css"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"react",
+		"payment",
+		"stripe",
+		"square",
+		"paypal",
+		"payment-gateway",
+		"checkout",
+		"meshalto"
+	],
+	"author": "Meshalto",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/johnakhilomen/meshalto-payment-sdk",
+		"directory": "sdk/vite-react"
+	},
+	"bugs": {
+		"url": "https://github.com/johnakhilomen/meshalto-payment-sdk/issues"
+	},
+	"homepage": "https://github.com/johnakhilomen/meshalto-payment-sdk#readme",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"build:lib": "vite build --mode library && cp src/index.d.ts dist/index.d.ts",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"prepublishOnly": "npm run build:lib",
+		"test": "vitest",
+		"test:unit": "vitest run",
+		"test:smoke": "vitest run src/test/smoke.test.tsx",
+		"test:coverage": "vitest run --coverage",
+		"test:ui": "vitest --ui",
+		"test:e2e": "playwright test",
+		"test:e2e:ci": "playwright test --reporter=list,junit,html",
+		"test:e2e:ui": "playwright test --ui",
+		"test:e2e:headed": "playwright test --headed",
+		"test:install": "playwright install chromium"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"dependencies": {
+		"@paypal/react-paypal-js": "^8.9.2",
+		"@stripe/react-stripe-js": "^5.4.0",
+		"@stripe/stripe-js": "^8.5.2",
+		"axios": "^1.13.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.39.1",
+		"@playwright/test": "^1.57.0",
+		"@tailwindcss/postcss": "^4.1.17",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@testing-library/react": "^16.3.0",
+		"@testing-library/user-event": "^14.6.1",
+		"@types/node": "^24.10.1",
+		"@types/react": "^19.2.5",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.1",
+		"@vitest/coverage-v8": "^4.0.14",
+		"@vitest/ui": "^4.0.14",
+		"autoprefixer": "^10.4.22",
+		"eslint": "^9.39.1",
+		"eslint-plugin-react-hooks": "^7.0.1",
+		"eslint-plugin-react-refresh": "^0.4.24",
+		"globals": "^16.5.0",
+		"happy-dom": "^20.0.10",
+		"jsdom": "^27.0.1",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^4.1.17",
+		"typescript": "~5.9.3",
+		"typescript-eslint": "^8.46.4",
+		"vite": "^7.2.4",
+		"vite-plugin-dts": "^4.5.4",
+		"vitest": "^4.0.14"
+	}
+}

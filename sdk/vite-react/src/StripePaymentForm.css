@@ -1,0 +1,135 @@
+/* Stripe Payment Form Styles */
+
+.meshalto-stripe-form {
+	width: 100%;
+}
+
+.stripe-checkout-form {
+	width: 100%;
+}
+
+.stripe-form-header {
+	text-align: center;
+	margin-bottom: var(--spacing-xl, 2rem);
+}
+
+.stripe-form-header h3 {
+	font-size: var(--font-size-h3, 1.25rem);
+	font-weight: var(--font-weight-bold, 700);
+	color: var(--color-text, #111827);
+	margin: 0;
+}
+
+.stripe-form-group {
+	margin-bottom: var(--spacing-lg, 1.5rem);
+}
+
+.stripe-form-group label {
+	display: block;
+	font-size: var(--font-size-small, 0.875rem);
+	font-weight: var(--font-weight-semibold, 600);
+	color: var(--color-text-secondary, #6b7280);
+	margin-bottom: var(--spacing-sm, 0.5rem);
+}
+
+.stripe-form-input {
+	width: 100%;
+	height: var(--spacing-2xl, 3rem);
+	padding: 0 var(--spacing-md, 1rem);
+	font-size: var(--font-size-base, 1rem);
+	font-family: inherit;
+	color: var(--color-text, #111827);
+	background-color: var(--color-surface, #ffffff);
+	border: 2px solid var(--color-border, #e5e7eb);
+	border-radius: var(--radius-md, 0.5rem);
+	transition: var(--transition, all 0.2s ease-in-out);
+	outline: none;
+}
+
+.stripe-form-input:hover {
+	border-color: var(--color-border-focus, #6366f1);
+}
+
+.stripe-form-input:focus {
+	border-color: var(--color-border-focus, #6366f1);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.stripe-form-input::placeholder {
+	color: var(--color-text-muted, #9ca3af);
+}
+
+.stripe-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-md, 1rem);
+}
+
+@media (max-width: 480px) {
+	.stripe-form-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+.stripe-card-element {
+	padding: var(--spacing-md, 1rem);
+	background-color: var(--color-surface, #ffffff);
+	border: 2px solid var(--color-border, #e5e7eb);
+	border-radius: var(--radius-md, 0.5rem);
+	transition: var(--transition, all 0.2s ease-in-out);
+}
+
+.stripe-card-element:hover {
+	border-color: var(--color-border-focus, #6366f1);
+}
+
+.stripe-card-element:focus-within {
+	border-color: var(--color-border-focus, #6366f1);
+	box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.stripe-submit-button {
+	width: 100%;
+	height: var(--spacing-2xl, 3rem);
+	padding: 0 var(--spacing-xl, 2rem);
+	font-size: var(--font-size-base, 1rem);
+	font-weight: var(--font-weight-semibold, 600);
+	font-family: inherit;
+	border: none;
+	border-radius: var(--radius-lg, 0.75rem);
+	cursor: pointer;
+	transition: var(--transition, all 0.2s ease-in-out);
+	background: linear-gradient(
+		135deg,
+		var(--color-primary, #6366f1) 0%,
+		var(--color-secondary, #8b5cf6) 100%
+	);
+	color: white;
+	box-shadow: var(--shadow-button, 0 1px 3px 0 rgba(0, 0, 0, 0.1));
+	margin-top: var(--spacing-lg, 1.5rem);
+}
+
+.stripe-submit-button:hover:not(:disabled) {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-card, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+}
+
+.stripe-submit-button:active:not(:disabled) {
+	transform: translateY(0);
+}
+
+.stripe-submit-button:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+/* Spinner animation */
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-spin {
+	animation: spin 1s linear infinite;
+}

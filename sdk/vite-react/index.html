@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/vite.svg"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- Content Security Policy for Square and Stripe SDKs -->
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://sandbox.web.squarecdn.com https://web.squarecdn.com https://js.stripe.com; frame-src 'self' https://sandbox.web.squarecdn.com https://web.squarecdn.com https://js.stripe.com https://hooks.stripe.com; connect-src 'self' https://pci-connect.squareup.com https://pci-connect.squareupsandbox.com https://connect.squareup.com https://connect.squareupsandbox.com https://api.stripe.com http://localhost:*; style-src 'self' 'unsafe-inline' https://sandbox.web.squarecdn.com https://web.squarecdn.com; img-src 'self' data: https:; font-src 'self' data: https://square-fonts-production-f.squarecdn.com https://d1g145x70srn7h.cloudfront.net;"
+		/>
+		<title>vite-react</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script
+			type="module"
+			src="/src/main.tsx"
+		></script>
+		<!-- Square Web Payments SDK -->
+		<script
+			type="text/javascript"
+			src="https://sandbox.web.squarecdn.com/v1/square.js"
+		></script>
+	</body>
+</html>

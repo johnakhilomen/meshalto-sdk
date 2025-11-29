@@ -1,0 +1,161 @@
+/* Header Component Styles */
+
+.meshalto-header {
+	background: linear-gradient(
+		135deg,
+		var(--color-primary, #8b5cf6) 0%,
+		var(--color-secondary, #ec4899) 100%
+	);
+	color: white;
+	padding: var(--spacing-lg, 1.5rem) 0;
+	box-shadow: var(--shadow-card, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.meshalto-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: radial-gradient(
+			circle at 20% 50%,
+			rgba(255, 255, 255, 0.1) 0%,
+			transparent 50%
+		),
+		radial-gradient(
+			circle at 80% 80%,
+			rgba(255, 255, 255, 0.1) 0%,
+			transparent 50%
+		);
+	pointer-events: none;
+}
+
+.meshalto-header-container {
+	padding: 0 var(--spacing-xl, 2rem);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+.meshalto-header-brand {
+	display: flex;
+	align-items: center;
+}
+
+.meshalto-logo {
+	display: flex;
+	align-items: center;
+	gap: var(--spacing-sm, 0.5rem);
+	font-size: var(--font-size-large, 1.125rem);
+	font-weight: var(--font-weight-bold, 700);
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+	transition: var(--transition, all 0.2s ease-in-out);
+}
+
+.meshalto-logo:hover {
+	transform: translateY(-2px);
+}
+
+.meshalto-logo-text {
+	font-size: 1.5rem;
+	letter-spacing: -0.5px;
+}
+
+.meshalto-header-nav {
+	display: flex;
+	gap: var(--spacing-xl, 2rem);
+	align-items: center;
+}
+
+.meshalto-nav-link {
+	color: rgba(255, 255, 255, 0.9);
+	text-decoration: none;
+	font-size: var(--font-size-base, 1rem);
+	font-weight: var(--font-weight-medium, 500);
+	padding: var(--spacing-sm, 0.5rem) var(--spacing-md, 1rem);
+	border-radius: var(--radius-md, 0.5rem);
+	transition: var(--transition, all 0.2s ease-in-out);
+	position: relative;
+}
+
+.meshalto-nav-link::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width 0.3s ease-in-out;
+}
+
+.meshalto-nav-link:hover {
+	background: rgba(255, 255, 255, 0.1);
+	color: white;
+}
+
+.meshalto-nav-link:hover::after {
+	width: 80%;
+}
+
+.meshalto-header-hero {
+	text-align: center;
+	padding: var(--spacing-xl, 2rem) 0;
+	position: relative;
+	z-index: 1;
+}
+
+.meshalto-header-title {
+	font-size: var(--font-size-h1, 2rem);
+	font-weight: var(--font-weight-bold, 700);
+	margin: 0 0 var(--spacing-sm, 0.5rem);
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	letter-spacing: -1px;
+}
+
+.meshalto-header-subtitle {
+	font-size: var(--font-size-large, 1.125rem);
+	margin: 0;
+	opacity: 0.95;
+	font-weight: var(--font-weight-normal, 400);
+}
+
+@media (max-width: 768px) {
+	.meshalto-header-container {
+		flex-direction: column;
+		gap: var(--spacing-md, 1rem);
+		padding: var(--spacing-md, 1rem);
+	}
+
+	.meshalto-header-nav {
+		gap: var(--spacing-md, 1rem);
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.meshalto-nav-link {
+		font-size: var(--font-size-small, 0.875rem);
+		padding: var(--spacing-xs, 0.25rem) var(--spacing-sm, 0.5rem);
+	}
+
+	.meshalto-header-hero {
+		padding: var(--spacing-lg, 1.5rem) 0;
+	}
+
+	.meshalto-header-title {
+		font-size: var(--font-size-h2, 1.5rem);
+	}
+
+	.meshalto-header-subtitle {
+		font-size: var(--font-size-base, 1rem);
+	}
+}

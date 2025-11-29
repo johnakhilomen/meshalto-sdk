@@ -1,0 +1,119 @@
+/* Square Payment Form Styles */
+.square-payment-wrapper {
+	width: 100%;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.square-payment-form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-md, 1rem);
+}
+
+/* Form groups and inputs */
+.square-form-group {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xs, 0.5rem);
+}
+
+.square-form-group label {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--color-text, #ffffff);
+}
+
+.square-form-input {
+	width: 100%;
+	padding: var(--spacing-sm, 0.75rem);
+	background-color: var(--color-surface, #1e293b);
+	border: 1px solid var(--color-border, #334155);
+	border-radius: var(--radius-sm, 0.375rem);
+	color: var(--color-text, #ffffff);
+	font-size: 16px;
+	transition: var(--transition, all 0.2s ease-in-out);
+}
+
+.square-form-input:focus {
+	outline: none;
+	border-color: var(--color-primary, #8b5cf6);
+	box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.square-form-input::placeholder {
+	color: var(--color-text-muted, #64748b);
+}
+
+/* Form row for side-by-side inputs */
+.square-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--spacing-md, 1rem);
+}
+
+/* .square-card-element {
+	background-color: var(--color-surface, #1e293b);
+	position: relative;
+} */
+
+/* .square-card-element iframe {
+	mix-blend-mode: multiply;
+} */
+
+@media (max-width: 640px) {
+	.square-form-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* Square card element container */
+.square-card-element {
+	min-height: 80px;
+	padding: 12px;
+	background-color: var(--color-surface, #1e293b);
+	border: 1px solid var(--color-border, #334155);
+	border-radius: var(--radius-md, 0.5rem);
+	transition: var(--transition, all 0.2s ease-in-out);
+}
+
+/* Error message styling */
+.square-error-message {
+	padding: var(--spacing-md, 1rem);
+	margin-bottom: var(--spacing-md, 1rem);
+	background-color: #fee2e2;
+	border: 1px solid #fca5a5;
+	border-radius: var(--radius-sm, 0.25rem);
+	color: #991b1b;
+	font-size: 14px;
+}
+
+/* Submit button styling */
+.square-submit-button {
+	width: 100%;
+	padding: var(--spacing-md, 1rem);
+	background-color: var(--color-primary, #8b5cf6);
+	color: white;
+	border: none;
+	border-radius: var(--radius-md, 0.5rem);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: var(--transition, all 0.2s ease-in-out);
+	margin-top: var(--spacing-sm, 0.75rem);
+}
+
+.square-submit-button:hover:not(:disabled) {
+	background-color: var(--color-primary-dark, #7c3aed);
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+.square-submit-button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.square-submit-button:active:not(:disabled) {
+	transform: translateY(0);
+}

@@ -1,0 +1,95 @@
+{
+	"header": {
+		"title": "Payment Details",
+		"subtitle": "Secure checkout powered by Meshalto",
+		"logo": "Meshalto",
+		"navigation": [
+			{ "label": "Make Payment Now", "href": "#payment" },
+			{ "label": "Services", "href": "#services" },
+			{ "label": "About Me", "href": "#about" }
+		]
+	},
+	"services": {
+		"title": "Our Services",
+		"subtitle": "Comprehensive payment solutions for your business",
+		"items": [
+			{
+				"title": "Payment Processing",
+				"description": "Accept payments from multiple gateways including Stripe, PayPal, and Square with seamless integration.",
+				"icon": "payment"
+			},
+			{
+				"title": "Secure Transactions",
+				"description": "Bank-grade encryption and security measures to protect your customers' sensitive payment information.",
+				"icon": "security"
+			},
+			{
+				"title": "Multi-Currency Support",
+				"description": "Process payments in multiple currencies with automatic conversion and competitive exchange rates.",
+				"icon": "currency"
+			},
+			{
+				"title": "Custom Theming",
+				"description": "Fully customizable payment forms that match your brand identity with light, dark, and ocean themes.",
+				"icon": "theme"
+			},
+			{
+				"title": "Real-time Analytics",
+				"description": "Track payment performance, success rates, and customer insights with comprehensive dashboards.",
+				"icon": "analytics"
+			},
+			{
+				"title": "24/7 Support",
+				"description": "Round-the-clock technical support to ensure your payment system runs smoothly at all times.",
+				"icon": "support"
+			}
+		]
+	},
+	"about": {
+		"title": "About Me",
+		"subtitle": "Building the future of payment solutions",
+		"description": "I'm passionate about creating seamless payment experiences that empower businesses to grow. With years of experience in fintech and software development, I've built Meshalto to be the most developer-friendly payment SDK on the market.",
+		"mission": "My mission is to democratize payment processing by making it accessible, secure, and delightful for developers and businesses of all sizes.",
+		"values": [
+			{
+				"title": "Security First",
+				"description": "Every transaction is protected with enterprise-grade security measures."
+			},
+			{
+				"title": "Developer Experience",
+				"description": "Clean APIs, comprehensive documentation, and intuitive integration."
+			},
+			{
+				"title": "Reliability",
+				"description": "99.99% uptime with redundant systems and automatic failover."
+			}
+		]
+	},
+	"footer": {
+		"copyright": "© 2025 Meshalto. All rights reserved.",
+		"links": [
+			{ "label": "Privacy Policy", "href": "#privacy" },
+			{ "label": "Terms of Service", "href": "#terms" },
+			{ "label": "Contact Us", "href": "#contact" }
+		],
+		"social": [
+			{ "platform": "Twitter", "url": "https://twitter.com/meshalto" },
+			{ "platform": "GitHub", "url": "https://github.com/meshalto" },
+			{ "platform": "LinkedIn", "url": "https://linkedin.com/company/meshalto" }
+		]
+	},
+	"modals": {
+		"privacy": {
+			"title": "Privacy Policy",
+			"content": "At Meshalto, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our payment processing services.\n\n**Information We Collect:**\n\n• Personal Information: Name, email address, billing address, and payment information\n• Transaction Data: Details about payments processed through our platform\n• Usage Data: Information about how you interact with our services\n• Device Information: IP address, browser type, and operating system\n\n**How We Use Your Information:**\n\n• To process and complete payment transactions\n• To prevent fraud and enhance security\n• To improve our services and user experience\n• To communicate with you about your account and transactions\n• To comply with legal obligations\n\n**Data Security:**\n\nWe implement industry-standard security measures including encryption, secure socket layer technology (SSL), and PCI DSS compliance to protect your information. All payment data is encrypted and stored securely.\n\n**Third-Party Services:**\n\nWe work with trusted payment gateway providers including Stripe, PayPal, and Square. These services have their own privacy policies and we encourage you to review them.\n\n**Your Rights:**\n\nYou have the right to access, correct, or delete your personal information. You may also object to certain data processing activities. Contact us to exercise these rights.\n\n**Contact Us:**\n\nIf you have questions about this Privacy Policy, please contact us at privacy@meshalto.com"
+		},
+		"terms": {
+			"title": "Terms of Service",
+			"content": "**Effective Date:** November 24, 2025\n\nWelcome to Meshalto. By using our payment processing services, you agree to these Terms of Service.\n\n**1. Acceptance of Terms**\n\nBy accessing or using Meshalto's services, you agree to be bound by these Terms of Service and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using our services.\n\n**2. Service Description**\n\nMeshalto provides a payment processing SDK that enables businesses to accept payments through multiple gateways including Stripe, PayPal, and Square. Our services include payment processing, transaction management, and reporting tools.\n\n**3. User Obligations**\n\nYou agree to:\n• Provide accurate and complete information\n• Maintain the security of your account credentials\n• Comply with all applicable laws and regulations\n• Not use the service for fraudulent or illegal activities\n• Pay all applicable fees as outlined in our pricing\n\n**4. Fees and Payment**\n\nTransaction fees vary by payment gateway and will be clearly disclosed. You are responsible for all fees associated with your use of the service, including payment gateway fees.\n\n**5. Intellectual Property**\n\nAll content, features, and functionality of Meshalto are owned by us and are protected by international copyright, trademark, and other intellectual property laws.\n\n**6. Limitation of Liability**\n\nMeshalto shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the service.\n\n**7. Termination**\n\nWe reserve the right to terminate or suspend your account at any time for violations of these Terms of Service.\n\n**8. Changes to Terms**\n\nWe may update these Terms of Service from time to time. We will notify you of any changes by posting the new Terms of Service on this page.\n\n**Contact:** terms@meshalto.com"
+		},
+		"contact": {
+			"title": "Contact Us",
+			"content": "We'd love to hear from you! Get in touch with us through any of the following methods:\n\n**General Inquiries:**\n\nEmail: hello@meshalto.com\nPhone: +1 (555) 123-4567\n\n**Technical Support:**\n\nEmail: support@meshalto.com\nAvailable 24/7 for urgent issues\nResponse time: Within 24 hours\n\n**Sales & Partnerships:**\n\nEmail: sales@meshalto.com\nPhone: +1 (555) 123-4568\n\n**Office Address:**\n\nMeshalto Inc.\n123 Payment Street, Suite 400\nSan Francisco, CA 94105\nUnited States\n\n**Business Hours:**\n\nMonday - Friday: 9:00 AM - 6:00 PM PST\nSaturday: 10:00 AM - 4:00 PM PST\nSunday: Closed\n\n**Social Media:**\n\nFollow us for updates and news:\n• Twitter: @meshalto\n• GitHub: github.com/meshalto\n• LinkedIn: linkedin.com/company/meshalto\n\n**Bug Reports:**\n\nFound a bug? Please report it to bugs@meshalto.com with detailed steps to reproduce.\n\nWe aim to respond to all inquiries within 24 hours during business days."
+		}
+	}
+}

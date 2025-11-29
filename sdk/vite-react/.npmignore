@@ -1,0 +1,45 @@
+# Source files
+src/
+public/
+
+# Tests
+e2e/
+test-results/
+playwright-report/
+coverage/
+*.spec.ts
+*.test.tsx
+*.test.ts
+test/
+
+# Build configuration
+vite.config.ts
+vitest.config.ts
+playwright.config.ts
+tsconfig.json
+tsconfig.app.json
+tsconfig.node.json
+tailwind.config.js
+postcss.config.js
+eslint.config.js
+
+# Development files
+.env
+.env.local
+.env.example
+node_modules/
+.vscode/
+.idea/
+
+# Documentation (keep README)
+E2E_*.md
+run-e2e-tests.sh
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.log
+.DS_Store
+.cache

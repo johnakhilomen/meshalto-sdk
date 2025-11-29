@@ -1,0 +1,106 @@
+/* Footer Component Styles */
+
+.meshalto-footer {
+	background-color: var(--color-surface, #1e293b);
+	color: var(--color-text-secondary, #cbd5e1);
+	padding: var(--spacing-xl, 2rem) 0;
+	margin-top: var(--spacing-2xl, 3rem);
+	border-top: 1px solid var(--color-border, #334155);
+}
+
+.meshalto-footer-container {
+	padding: 0 var(--spacing-xl, 2rem);
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xl, 2rem);
+	align-items: center;
+	text-align: center;
+}
+.meshalto-footer-links {
+	display: flex;
+	gap: var(--spacing-xl, 2rem);
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.meshalto-footer-link {
+	color: var(--color-text-secondary, #cbd5e1);
+	text-decoration: none;
+	font-size: var(--font-size-small, 0.875rem);
+	font-weight: var(--font-weight-medium, 500);
+	transition: var(--transition, all 0.2s ease-in-out);
+	position: relative;
+}
+
+.meshalto-footer-link::after {
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: var(--color-primary, #8b5cf6);
+	transition: width 0.3s ease-in-out;
+}
+
+.meshalto-footer-link:hover {
+	color: var(--color-primary, #8b5cf6);
+}
+
+.meshalto-footer-link:hover::after {
+	width: 100%;
+}
+
+.meshalto-footer-social {
+	display: flex;
+	gap: var(--spacing-md, 1rem);
+	justify-content: center;
+}
+
+.meshalto-social-link {
+	color: var(--color-text-secondary, #cbd5e1);
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--radius-full, 9999px);
+	background-color: rgba(139, 92, 246, 0.1);
+	transition: var(--transition, all 0.2s ease-in-out);
+	text-decoration: none;
+}
+
+.meshalto-social-link:hover {
+	background-color: var(--color-primary, #8b5cf6);
+	color: white;
+	transform: translateY(-3px);
+	box-shadow: var(--shadow-button, 0 1px 3px 0 rgba(0, 0, 0, 0.3));
+}
+
+.meshalto-footer-copyright {
+	font-size: var(--font-size-small, 0.875rem);
+	color: var(--color-text-muted, #94a3b8);
+	padding-top: var(--spacing-md, 1rem);
+	border-top: 1px solid var(--color-border, #334155);
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.meshalto-footer {
+		padding: var(--spacing-lg, 1.5rem) 0;
+	}
+
+	.meshalto-footer-links {
+		flex-direction: column;
+		gap: var(--spacing-md, 1rem);
+	}
+
+	.meshalto-footer-social {
+		gap: var(--spacing-sm, 0.5rem);
+	}
+
+	.meshalto-social-link {
+		width: 36px;
+		height: 36px;
+	}
+}
