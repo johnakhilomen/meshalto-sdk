@@ -1,13 +1,10 @@
 {
-	"name": "@meshalto/cli",
-	"version": "0.1.0",
+	"name": "create-meshalto-app",
+	"version": "0.1.1",
 	"description": "CLI tool to quickly set up Meshalto Payment SDK projects",
 	"type": "module",
 	"main": "./dist/index.js",
-	"bin": {
-		"meshalto": "./dist/index.js",
-		"create-meshalto-app": "./dist/index.js"
-	},
+	"bin": "./dist/index.js",
 	"files": [
 		"dist",
 		"templates",

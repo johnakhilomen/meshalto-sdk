@@ -199,4 +199,4 @@ npx @meshalto/cli init
 
 ## License
 
-MIT © Meshalto
+MIT © John Akhilomen

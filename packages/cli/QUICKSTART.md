@@ -3,16 +3,19 @@
 ## Installation & Usage
 
 ### Option 1: NPX (Recommended - No Installation)
+
 ```bash
 npx @meshalto/cli create my-payment-app
 ```
 
 ### Option 2: Alternative Command
+
 ```bash
 npx create-meshalto-app my-payment-app
 ```
 
 ### Option 3: Global Installation
+
 ```bash
 npm install -g @meshalto/cli
 meshalto create my-payment-app
@@ -31,11 +34,13 @@ The Meshalto CLI automates the setup of payment integration projects:
 ## Interactive Setup
 
 Simply run:
+
 ```bash
 npx @meshalto/cli create
 ```
 
 You'll be prompted to choose:
+
 - **Project name**
 - **Framework** (React, Vue, or WordPress)
 - **Backend server** (Yes/No)
@@ -84,9 +89,11 @@ $ npx @meshalto/cli create
 ## Commands
 
 ### `create [project-name]`
+
 Create a new payment integration project
 
 ### `init`
+
 Add Meshalto to an existing project
 
 ## Requirements
