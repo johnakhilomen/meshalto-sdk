@@ -13,7 +13,25 @@ you 30-40% on processing fees.
 
 ## ⚡ Quick Start (5 Minutes)
 
-### Use Pre-built Components (Recommended)
+### Option 1: Use the CLI (Easiest)
+
+```bash
+# Create a new project with everything set up
+npx @meshalto/cli create my-payment-app
+
+# Or use the alternative command
+npx create-meshalto-app my-payment-app
+```
+
+The CLI will:
+
+- ✅ Set up your chosen framework (React/Vue/WordPress)
+- ✅ Configure environment files
+- ✅ Install dependencies
+- ✅ Generate secure API keys
+- ✅ Optionally include the backend server
+
+### Option 2: Use Pre-built Components
 
 ```bash
 # React
@@ -34,7 +52,7 @@ import { MeshaltoPayment } from '@meshalto/react';
 />;
 ```
 
-### Run the API locally
+### Option 3: Run the API locally
 
 ```bash
 git clone https://github.com/johnakhilomen/meshalto-payment-sdk
@@ -52,6 +70,11 @@ Your API is now running at `http://localhost:8002`
 
 ```
 meshalto-payment-sdk/
+├── packages/
+│   └── cli/                 # @meshalto/cli - Project setup tool
+│       ├── src/
+│       ├── README.md
+│       └── package.json
 ├── sdk/
 │   ├── server/              # FastAPI backend API
 │   │   ├── main.py          # API server
